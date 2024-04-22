@@ -120,7 +120,7 @@ request just like we would for a GET request, just by changing the method:
 ```py
 # server/app.py
 
-# imports, config, games, game_by_id, reviews
+# imports, config, games, game
 
 @app.route('/reviews/<int:id>', methods=['GET', 'DELETE'])
 def review_by_id(id):
